@@ -247,6 +247,12 @@
       "value": "Neues Passwort"
     }
   ],
+  "label.none": [
+    {
+      "type": 0,
+      "value": "None"
+    }
+  ],
   "label.owner": [
     {
       "type": 0,
@@ -334,7 +340,7 @@
   "label.theme": [
     {
       "type": 0,
-      "value": "Theme"
+      "value": "Thema"
     }
   ],
   "label.this-month": [
@@ -704,7 +710,7 @@
   "metrics.device.mobile": [
     {
       "type": 0,
-      "value": "Mobiltelefon"
+      "value": "Handy"
     }
   ],
   "metrics.device.tablet": [
@@ -729,12 +735,6 @@
     {
       "type": 0,
       "value": "Kombiniert"
-    }
-  ],
-  "metrics.filter.domain-only": [
-    {
-      "type": 0,
-      "value": "Nur diese Domain"
     }
   ],
   "metrics.filter.raw": [
@@ -773,10 +773,52 @@
       "value": "Referrer"
     }
   ],
+  "metrics.screens": [
+    {
+      "type": 0,
+      "value": "Bildschirmauflösungen"
+    }
+  ],
   "metrics.unique-visitors": [
     {
       "type": 0,
       "value": "Eindeutige Besucher"
+    }
+  ],
+  "metrics.utm": [
+    {
+      "type": 0,
+      "value": "UTM"
+    }
+  ],
+  "metrics.utm_campaign": [
+    {
+      "type": 0,
+      "value": "UTM Campaign"
+    }
+  ],
+  "metrics.utm_content": [
+    {
+      "type": 0,
+      "value": "UTM Content"
+    }
+  ],
+  "metrics.utm_medium": [
+    {
+      "type": 0,
+      "value": "UTM Medium"
+    }
+  ],
+  "metrics.utm_source": [
+    {
+      "type": 0,
+      "value": "UTM Source"
+    }
+  ],
+  "metrics.utm_term": [
+    {
+      "type": 0,
+      "value": "UTM Term"
     }
   ],
   "metrics.views": [
