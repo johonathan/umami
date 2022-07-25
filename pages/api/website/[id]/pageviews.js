@@ -1,5 +1,5 @@
 import moment from 'moment-timezone';
-import { getPageviewStats } from 'queries';
+import { getPageviewStats } from 'lib/queries';
 import { ok, badRequest, methodNotAllowed, unauthorized } from 'lib/response';
 import { allowQuery } from 'lib/auth';
 import { useCors } from 'lib/middleware';
@@ -34,7 +34,7 @@ export default async (req, res) => {
         device,
         country,
       }),
-      getPageviewStats(websiteId, startDate, endDate, tz, unit, 'distinct pageview.', {
+      getPageviewStats(websiteId, startDate, endDate, tz, unit, 'distinct pageview.session_id', {
         url,
         os,
         browser,

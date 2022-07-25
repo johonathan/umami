@@ -1,23 +1,5 @@
 import { NextResponse } from 'next/server';
 
-export const config = {
-  matcher: '/:path*',
-};
-
-function customCollectEndpoint(req) {
-  const collectEndpoint = process.env.COLLECT_API_ENDPOINT;
-
-  if (collectEndpoint) {
-    const url = req.nextUrl.clone();
-    const { pathname } = url;
-
-    if (pathname.endsWith(collectEndpoint)) {
-      url.pathname = '/api/collect';
-      return NextResponse.rewrite(url);
-    }
-  }
-}
-
 function customScriptName(req) {
   const scriptName = process.env.TRACKER_SCRIPT_NAME;
 
@@ -41,8 +23,8 @@ function forceSSL(req, res) {
   return res;
 }
 
-export default function middleware(req) {
-  const fns = [customCollectEndpoint, customScriptName];
+export function middleware(req) {
+  const fns = [customScriptName];
 
   for (const fn of fns) {
     const res = fn(req);

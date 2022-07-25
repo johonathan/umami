@@ -1,4 +1,4 @@
-import { getWebsiteByShareId } from 'queries';
+import { getWebsiteByShareId } from 'lib/queries';
 import { ok, notFound, methodNotAllowed } from 'lib/response';
 import { createToken } from 'lib/crypto';
 

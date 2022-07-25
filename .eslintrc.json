@@ -16,8 +16,7 @@
     "react/display-name": "off",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
-    "import/no-anonymous-default-export": "off",
-    "@next/next/no-img-element": "off"
+    "import/no-anonymous-default-export": "off"
   },
   "globals": {
     "React": "writable"
