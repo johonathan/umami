@@ -15,6 +15,10 @@ jobs:
     strategy:
       matrix:
         include:
+        - node-version: 12.x
+          db-type: postgresql
+        - node-version: 12.x
+          db-type: mysql
         - node-version: 14.x
           db-type: postgresql
         - node-version: 14.x

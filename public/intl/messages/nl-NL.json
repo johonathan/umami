@@ -38,7 +38,7 @@
   "label.all-time": [
     {
       "type": 0,
-      "value": "Onbeperkt"
+      "value": "All time"
     }
   ],
   "label.all-websites": [
@@ -176,7 +176,7 @@
   "label.language": [
     {
       "type": 0,
-      "value": "Taal"
+      "value": "Language"
     }
   ],
   "label.last-days": [
@@ -247,16 +247,10 @@
       "value": "Nieuw wachtwoord"
     }
   ],
-  "label.none": [
-    {
-      "type": 0,
-      "value": "Geen"
-    }
-  ],
   "label.owner": [
     {
       "type": 0,
-      "value": "Eigenaar"
+      "value": "Owner"
     }
   ],
   "label.password": [
@@ -310,7 +304,7 @@
   "label.reset-website": [
     {
       "type": 0,
-      "value": "Statistieken opnieuw instellen"
+      "value": "Reset statistics"
     }
   ],
   "label.save": [
@@ -340,7 +334,7 @@
   "label.theme": [
     {
       "type": 0,
-      "value": "Thema"
+      "value": "Theme"
     }
   ],
   "label.this-month": [
@@ -454,7 +448,7 @@
   "message.confirm-reset": [
     {
       "type": 0,
-      "value": "Weet je zeker dat je de statistieken van "
+      "value": "Are your sure you want to reset "
     },
     {
       "type": 1,
@@ -462,7 +456,7 @@
     },
     {
       "type": 0,
-      "value": " opnieuw wilt instellen?"
+      "value": "'s statistics?"
     }
   ],
   "message.copied": [
@@ -586,7 +580,7 @@
   "message.reset-warning": [
     {
       "type": 0,
-      "value": "Alle bijhorende statistieken van deze website worden verwijderd, maar jouw volgcode blijft gelden."
+      "value": "All statistics for this website will be deleted, but your tracking code will remain intact."
     }
   ],
   "message.save-success": [
@@ -612,7 +606,7 @@
   "message.toggle-charts": [
     {
       "type": 0,
-      "value": "Grafieken tonen/verbergen"
+      "value": "Toggle charts"
     }
   ],
   "message.track-stats": [
@@ -737,6 +731,12 @@
       "value": "Gecombineerd"
     }
   ],
+  "metrics.filter.domain-only": [
+    {
+      "type": 0,
+      "value": "Alleen domein"
+    }
+  ],
   "metrics.filter.raw": [
     {
       "type": 0,
@@ -752,7 +752,7 @@
   "metrics.operating-systems": [
     {
       "type": 0,
-      "value": "Besturingssystemen"
+      "value": "Besturingssysteem"
     }
   ],
   "metrics.page-views": [
@@ -773,52 +773,10 @@
       "value": "Verwijzers"
     }
   ],
-  "metrics.screens": [
-    {
-      "type": 0,
-      "value": "Schermen"
-    }
-  ],
   "metrics.unique-visitors": [
     {
       "type": 0,
       "value": "Unieke bezoekers"
-    }
-  ],
-  "metrics.utm": [
-    {
-      "type": 0,
-      "value": "UTM"
-    }
-  ],
-  "metrics.utm_campaign": [
-    {
-      "type": 0,
-      "value": "UTM Campaign"
-    }
-  ],
-  "metrics.utm_content": [
-    {
-      "type": 0,
-      "value": "UTM Content"
-    }
-  ],
-  "metrics.utm_medium": [
-    {
-      "type": 0,
-      "value": "UTM Medium"
-    }
-  ],
-  "metrics.utm_source": [
-    {
-      "type": 0,
-      "value": "UTM Source"
-    }
-  ],
-  "metrics.utm_term": [
-    {
-      "type": 0,
-      "value": "UTM Term"
     }
   ],
   "metrics.views": [

@@ -1,5 +1,5 @@
 import { checkPassword, createSecureToken } from 'lib/crypto';
-import { getAccountByUsername } from 'queries/admin/account/getAccountByUsername';
+import { getAccountByUsername } from 'lib/queries';
 import { ok, unauthorized, badRequest } from 'lib/response';
 
 export default async (req, res) => {

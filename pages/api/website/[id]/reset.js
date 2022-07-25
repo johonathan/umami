@@ -1,4 +1,4 @@
-import { resetWebsite } from 'queries';
+import { resetWebsite } from 'lib/queries';
 import { methodNotAllowed, ok, unauthorized } from 'lib/response';
 import { allowQuery } from 'lib/auth';
 

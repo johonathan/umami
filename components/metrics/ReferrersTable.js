@@ -1,40 +1,31 @@
 import React, { useState } from 'react';
-import { useIntl, defineMessages } from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import MetricsTable from './MetricsTable';
 import FilterButtons from 'components/common/FilterButtons';
 import FilterLink from 'components/common/FilterLink';
 import { refFilter } from 'lib/filters';
 
-export const FILTER_COMBINED = 0;
-export const FILTER_RAW = 1;
+export const FILTER_DOMAIN_ONLY = 0;
+export const FILTER_COMBINED = 1;
+export const FILTER_RAW = 2;
 
-const messages = defineMessages({
-  combined: { id: 'metrics.filter.combined', defaultMessage: 'Combined' },
-  raw: { id: 'metrics.filter.raw', defaultMessage: 'Raw' },
-  referrers: { id: 'metrics.referrers', defaultMessage: 'Referrers' },
-  views: { id: 'metrics.views', defaultMessage: 'Views' },
-  none: { id: 'label.none', defaultMessage: 'None' },
-});
-
-export default function ReferrersTable({ websiteId, showFilters, ...props }) {
+export default function ReferrersTable({ websiteId, websiteDomain, showFilters, ...props }) {
   const [filter, setFilter] = useState(FILTER_COMBINED);
-  const { formatMessage } = useIntl();
-  const none = formatMessage(messages.none);
 
   const buttons = [
     {
-      label: formatMessage(messages.combined),
+      label: <FormattedMessage id="metrics.filter.domain-only" defaultMessage="Domain only" />,
+      value: FILTER_DOMAIN_ONLY,
+    },
+    {
+      label: <FormattedMessage id="metrics.filter.combined" defaultMessage="Combined" />,
       value: FILTER_COMBINED,
     },
-    { label: formatMessage(messages.raw), value: FILTER_RAW },
+    { label: <FormattedMessage id="metrics.filter.raw" defaultMessage="Raw" />, value: FILTER_RAW },
   ];
 
   const renderLink = ({ w: link, x: referrer }) => {
-    return referrer ? (
-      <FilterLink id="referrer" value={referrer} externalUrl={link} />
-    ) : (
-      `(${none})`
-    );
+    return <FilterLink id="referrer" value={referrer} externalUrl={link} />;
   };
 
   return (
@@ -42,11 +33,16 @@ export default function ReferrersTable({ websiteId, showFilters, ...props }) {
       {showFilters && <FilterButtons buttons={buttons} selected={filter} onClick={setFilter} />}
       <MetricsTable
         {...props}
-        title={formatMessage(messages.referrers)}
+        title={<FormattedMessage id="metrics.referrers" defaultMessage="Referrers" />}
         type="referrer"
-        metric={formatMessage(messages.views)}
+        metric={<FormattedMessage id="metrics.views" defaultMessage="Views" />}
         websiteId={websiteId}
-        dataFilter={filter !== FILTER_RAW ? refFilter : null}
+        dataFilter={refFilter}
+        filterOptions={{
+          domain: websiteDomain,
+          domainOnly: filter === FILTER_DOMAIN_ONLY,
+          raw: filter === FILTER_RAW,
+        }}
         renderLabel={renderLink}
       />
     </>

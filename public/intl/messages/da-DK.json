@@ -32,19 +32,19 @@
   "label.all-events": [
     {
       "type": 0,
-      "value": "Alle hændelser"
+      "value": "All events"
     }
   ],
   "label.all-time": [
     {
       "type": 0,
-      "value": "Altid"
+      "value": "All time"
     }
   ],
   "label.all-websites": [
     {
       "type": 0,
-      "value": "Alle hjemmesider"
+      "value": "Alle websites"
     }
   ],
   "label.back": [
@@ -176,7 +176,7 @@
   "label.language": [
     {
       "type": 0,
-      "value": "Sprog"
+      "value": "Language"
     }
   ],
   "label.last-days": [
@@ -210,7 +210,7 @@
   "label.logged-in-as": [
     {
       "type": 0,
-      "value": "Logget ind som "
+      "value": "Loggede ind som "
     },
     {
       "type": 1,
@@ -247,16 +247,10 @@
       "value": "Ny adgangskode"
     }
   ],
-  "label.none": [
-    {
-      "type": 0,
-      "value": "None"
-    }
-  ],
   "label.owner": [
     {
       "type": 0,
-      "value": "Ejer"
+      "value": "Owner"
     }
   ],
   "label.password": [
@@ -268,7 +262,7 @@
   "label.passwords-dont-match": [
     {
       "type": 0,
-      "value": "Adgangskoderne matcher ikke"
+      "value": "Adgangskoder matcher ikke"
     }
   ],
   "label.profile": [
@@ -304,13 +298,13 @@
   "label.reset": [
     {
       "type": 0,
-      "value": "Nulstil"
+      "value": "Reset"
     }
   ],
   "label.reset-website": [
     {
       "type": 0,
-      "value": "Nulstil statistikker"
+      "value": "Reset statistics"
     }
   ],
   "label.save": [
@@ -340,7 +334,7 @@
   "label.theme": [
     {
       "type": 0,
-      "value": "Tema"
+      "value": "Theme"
     }
   ],
   "label.this-month": [
@@ -454,7 +448,7 @@
   "message.confirm-reset": [
     {
       "type": 0,
-      "value": "Er du sikker på at du ville nulstille "
+      "value": "Are your sure you want to reset "
     },
     {
       "type": 1,
@@ -462,7 +456,7 @@
     },
     {
       "type": 0,
-      "value": "'s statistikker?"
+      "value": "'s statistics?"
     }
   ],
   "message.copied": [
@@ -564,7 +558,7 @@
   "message.no-websites-configured": [
     {
       "type": 0,
-      "value": "Du har ikke konfigureret nogen hjemmesider."
+      "value": "Du har ikke konfigureret nogen websteder."
     }
   ],
   "message.page-not-found": [
@@ -586,7 +580,7 @@
   "message.reset-warning": [
     {
       "type": 0,
-      "value": "Alle statistikker for denne hjemmeside ville blive slettet, men sporingskode ville forblive intakt."
+      "value": "All statistics for this website will be deleted, but your tracking code will remain intact."
     }
   ],
   "message.save-success": [
@@ -598,7 +592,7 @@
   "message.share-url": [
     {
       "type": 0,
-      "value": "Dette er den offentlige delings-URL til "
+      "value": "Dette er den offentligt delings-URL til "
     },
     {
       "type": 1,
@@ -612,7 +606,7 @@
   "message.toggle-charts": [
     {
       "type": 0,
-      "value": "Ændre graf"
+      "value": "Toggle charts"
     }
   ],
   "message.track-stats": [
@@ -634,7 +628,7 @@
     },
     {
       "type": 0,
-      "value": " sektionen på din hjemmeside."
+      "value": " sektionen på dit websted."
     }
   ],
   "message.type-delete": [
@@ -737,6 +731,12 @@
       "value": "Kombineret"
     }
   ],
+  "metrics.filter.domain-only": [
+    {
+      "type": 0,
+      "value": "Kun domæne"
+    }
+  ],
   "metrics.filter.raw": [
     {
       "type": 0,
@@ -746,7 +746,7 @@
   "metrics.languages": [
     {
       "type": 0,
-      "value": "Sprog"
+      "value": "Languages"
     }
   ],
   "metrics.operating-systems": [
@@ -773,52 +773,10 @@
       "value": "Henvisninger"
     }
   ],
-  "metrics.screens": [
-    {
-      "type": 0,
-      "value": "Screens"
-    }
-  ],
   "metrics.unique-visitors": [
     {
       "type": 0,
       "value": "Unikke besøgende"
-    }
-  ],
-  "metrics.utm": [
-    {
-      "type": 0,
-      "value": "UTM"
-    }
-  ],
-  "metrics.utm_campaign": [
-    {
-      "type": 0,
-      "value": "UTM Campaign"
-    }
-  ],
-  "metrics.utm_content": [
-    {
-      "type": 0,
-      "value": "UTM Content"
-    }
-  ],
-  "metrics.utm_medium": [
-    {
-      "type": 0,
-      "value": "UTM Medium"
-    }
-  ],
-  "metrics.utm_source": [
-    {
-      "type": 0,
-      "value": "UTM Source"
-    }
-  ],
-  "metrics.utm_term": [
-    {
-      "type": 0,
-      "value": "UTM Term"
     }
   ],
   "metrics.views": [

@@ -22,8 +22,6 @@ import useFetch from 'hooks/useFetch';
 import usePageQuery from 'hooks/usePageQuery';
 import { DEFAULT_ANIMATION_DURATION } from 'lib/constants';
 import styles from './WebsiteDetails.module.css';
-import ScreenTable from 'components/metrics/ScreenTable';
-import UTMTable from 'components/metrics/UTMTable';
 
 const views = {
   url: PagesTable,
@@ -31,11 +29,9 @@ const views = {
   browser: BrowsersTable,
   os: OSTable,
   device: DevicesTable,
-  screen: ScreenTable,
   country: CountriesTable,
   language: LanguagesTable,
   event: EventsTable,
-  utm: UTMTable,
 };
 
 export default function WebsiteDetails({ websiteId }) {
@@ -69,10 +65,6 @@ export default function WebsiteDetails({ websiteId }) {
       value: resolve({ view: 'referrer' }),
     },
     {
-      label: <FormattedMessage id="metrics.screens" defaultMessage="Screens" />,
-      value: resolve({ view: 'screen' }),
-    },
-    {
       label: <FormattedMessage id="metrics.browsers" defaultMessage="Browsers" />,
       value: resolve({ view: 'browser' }),
     },
@@ -95,10 +87,6 @@ export default function WebsiteDetails({ websiteId }) {
     {
       label: <FormattedMessage id="metrics.events" defaultMessage="Events" />,
       value: resolve({ view: 'event' }),
-    },
-    {
-      label: <FormattedMessage id="metrics.utm" defaultMessage="UTM" />,
-      value: resolve({ view: 'utm' }),
     },
   ];
 
